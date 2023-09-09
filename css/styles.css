@@ -1,8 +1,24 @@
 :root {
-    --link-color: #fff;
-    --heading-font-family: "Roboto", sans-serif;
+    --link-color-2: #212121;
+    --background-color: #fff;
+    --link-color: #2196F3;
+    --foot-color:#2F303A;
+    --adress-color:#757575;
+    --foot-sdress-color:#FFFFFF99;
+
 }
 .global-body {
-    font-family: "Roboto",sans-serif;
-    background-color: #fff
+    font-family: "Roboto", sans-serif;
+    background-color:var(--background-color)
+    
+}
+.main-navigation a:link .main-navigation a:visited{
+    color: var(--link-color-2);
+}
+.main-navigation a:hover{
+color: var(--link-color);
+}
+.ul {
+    list-style-type: none;
+    --link-color-2: #212121;
 }
