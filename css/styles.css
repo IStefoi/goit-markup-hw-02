@@ -34,7 +34,8 @@ ul {
   color: #2196f3;
 }
 
-.item a:link {
+.navigation-link a:link,
+a:visited {
   color: var(--link-color-2);
   font-family: var(--text-font-famyli);
   font-size: 14px;
@@ -43,13 +44,14 @@ ul {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
+  list-style-type: none;
 }
 
-.item a:hover {
+.navigation-link a:hover {
   color: var(--link-color);
 }
 
-.item a:focus {
+.navigation-link a:focus {
   color: red;
 }
 
@@ -63,8 +65,8 @@ ul {
   list-style-type: none;
 }
 
-.contact a:hover {
-  color: red;
+.contact :hover {
+  color: var(--link-color);
 }
 
 /* Button and titel section */
@@ -142,11 +144,8 @@ ul {
   text-decoration: none;
 }
 
-.address a:visited {
-  color: red;
-}
 
-.address a:link {
+.address:link {
   color: #fff;
   font-size: 14px;
   font-style: normal;
@@ -154,28 +153,25 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-decoration: none;
+  list-style-type: none;
 }
 
-.contact-ends a:link {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+.contact-ends :active {
+  color: #FFFFFF.60%;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.42px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+  list-style-type: none;
 }
+
 
 /* Portofoliu butons */
-.buttons a:focus {
-  background-color: var(--link-color);
-  color: var(--color-wite);
-}
 
 .buttons {
+  color: var(--link-color-2);
   border-radius: 4px;
-  color: #212121;
-  text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -183,4 +179,13 @@ ul {
   line-height: 162.5%;
   letter-spacing: 0.48px;
   cursor: pointer;
+  border: none;
+
+}
+
+.buttons :hover,
+.buttons :focus {
+  background-color: var(--link-color);
+  color: var(--color-wite);
+
 }
