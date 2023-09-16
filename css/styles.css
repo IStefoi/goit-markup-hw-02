@@ -88,6 +88,7 @@ ul {
 
 .button-service {
   color: var(--link-color-2);
+  background-color: var(--link-color);
   text-align: center;
   font-size: 16px;
   line-height: 187.5%;
@@ -102,7 +103,7 @@ ul {
 
 .button-service:hover {
   color: var(--color-wite);
-  background-color: #2196f3;
+
 }
 
 .tittel-details {
